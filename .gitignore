@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# distro
-/dist
+# # dist - not removed since we are using the package without npm
+# /dist
 
 # dependencies
 /node_modules
