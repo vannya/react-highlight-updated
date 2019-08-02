@@ -13,5 +13,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
-  "dependencies": {}
+  "dependencies": {
+    "highlight.js": "^9.15.9"
+  }
 }
