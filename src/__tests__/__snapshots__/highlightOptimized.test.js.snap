@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`highlight should match snapshot 1`] = `
+<pre>
+  <code>
+    Mock Text
+  </code>
+</pre>
+`;
