@@ -1,8 +1,9 @@
 # react-highlight-updated [![Build Status](https://travis-ci.org/vannya/react-highlight-updated.svg?branch=master)](https://travis-ci.org/vannya/react-highlight-updated)
 
 Updated react-highlight package for syntax highlighting in React using highlight.js.  
-This version was created because the [react-highlight package](https://github.com/akiran/react-highlight/) we were using as part of a documentation site was out of date and breaking our test cases. Refactored to a functional component, rewrote refs and updated all build packages. This is a breaking change to the original react-highlight package.
-Note: This package now has a peer dependency on React version 16.8.6 due to useEffect and useRef.
+
+This version was created because the [react-highlight package](https://github.com/akiran/react-highlight/) we were using as part of a documentation site was out of date and breaking our test cases. Refactored to a functional component, rewrote refs, updated all build packages and added documentation into the distribution package. This is a breaking change to the original react-highlight package.  
+Note: This package now has a peer dependency on React version 16.8.6 due to useEffect and useRef.  
 
 ### Latest version
 
