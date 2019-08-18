@@ -1,23 +1,25 @@
 # react-highlight-updated
 
-Updated react-highlight package for syntax highlighting in React using highlight.js
+Updated react-highlight package for syntax highlighting in React using highlight.js.  
+This version was created because the react-highlight package we were using as part of a documentation site was out of date and breaking our test cases.  
+Note: This package now has a peer dependency on React version 16.8.6 due to useEffect and useRef.
 
-<!-- ![Build Status](https://travis-ci.org/akiran/react-highlight.svg?branch=master) -->
+<!-- ![Build Status](https://travis-ci.org/vannya/react-highlight-updated.svg?branch=master) -->
 
 ### Latest version
 
-`0.11.1`
+`0.1.0`
 
-## [Documentation](https://react-highlight.neostack.com/)
+## [React Highlight Documentation](https://react-highlight.neostack.com/)
 
 ### CodeSandbox Example
 
-[![Edit new](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mj6wlmor9p)
+[![Edit react-highlight-updated](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/laughing-swanson-euuss?fontsize=14)
 
 ### Installation
 
 ```bash
-  npm install react-highlight --save
+  npm install react-highlight-updated highlight.js --save
 ```
 
 ### Usage
@@ -25,10 +27,12 @@ Updated react-highlight package for syntax highlighting in React using highlight
 #### Importing component
 
 ```js
-import Highlight from 'react-highlight'
+import Highlight from "react-highlight";
 ```
 
-#### Adding styles
+#### Adding styles - Two methods
+
+##### CSS
 
 Choose the [theme](https://highlightjs.org/static/demo/) for syntax highlighting and add corresponding styles of highlight.js
 
@@ -38,18 +42,28 @@ Choose the [theme](https://highlightjs.org/static/demo/) for syntax highlighting
 
 The styles will most likely be in `node_modules/highlight.js/styles` folder.
 
-Props:
+##### Import into file
 
-* className: custom class name
-* innerHTML: enable to render markup with dangerouslySetInnerHTML
-* element: render code snippet inside specified element
+Inside the file that highlight will be used (or a parent file of multiple children), import the stylesheet.
+
+```js
+import "/path/to/styles/theme-name.css";
+```
+
+### Props:
+
+- className: custom class name
+- innerHTML: enable to render markup with dangerouslySetInnerHTML
+- element: render code snippet inside specified element
+
+### Examples:
 
 #### Syntax highlighting of single code snippet
 
 Code snippet that requires syntax highlighting should be passed as children to Highlight component in string format. Language name of code snippet should be specified as className.
 
 ```html
-<Highlight className='language-name-of-snippet'>
+<Highlight className="language-name-of-snippet">
   {"code snippet to be highlighted"}
 </Highlight>
 ```
@@ -57,12 +71,12 @@ Code snippet that requires syntax highlighting should be passed as children to H
 #### Syntax highlighting of mutiple code snippets
 
 Set `innerHTML=true` to highlight multiple code snippets at a time.
-This is especially usefull if html with multiple code snippets is generated from preprocesser tools like markdown.
+This is especially useful if html with multiple code snippets is generated from preprocesser tools like markdown.
 
 **Warning:** If innerHTML is set to true, make sure the html generated with code snippets is from trusted source.
 
 ```html
-<Highlight innerHTML={true}>
+<Highlight innerHTML="{true}">
   {"html with multiple code snippets"}
 </Highlight>
 ```
