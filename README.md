@@ -1,4 +1,4 @@
-# react-highlight-updated ![Build Status](https://travis-ci.org/vannya/react-highlight-updated.svg?branch=master)
+# react-highlight-updated [![Build Status](https://travis-ci.org/vannya/react-highlight-updated.svg?branch=master)](https://travis-ci.org/vannya/react-highlight-updated)
 
 Updated react-highlight package for syntax highlighting in React using highlight.js.  
 This version was created because the react-highlight package we were using as part of a documentation site was out of date and breaking our test cases.  
