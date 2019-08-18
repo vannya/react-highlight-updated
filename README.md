@@ -1,20 +1,12 @@
-# react-highlight-updated
+# react-highlight-updated ![Build Status](https://travis-ci.org/vannya/react-highlight-updated.svg?branch=master)
 
 Updated react-highlight package for syntax highlighting in React using highlight.js.  
 This version was created because the react-highlight package we were using as part of a documentation site was out of date and breaking our test cases.  
 Note: This package now has a peer dependency on React version 16.8.6 due to useEffect and useRef.
 
-<!-- ![Build Status](https://travis-ci.org/vannya/react-highlight-updated.svg?branch=master) -->
-
 ### Latest version
 
 `0.1.0`
-
-## [React Highlight Documentation](https://react-highlight.neostack.com/)
-
-### CodeSandbox Example
-
-[![Edit react-highlight-updated](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/laughing-swanson-euuss?fontsize=14)
 
 ### Installation
 
@@ -32,7 +24,7 @@ import Highlight from "react-highlight";
 
 #### Adding styles - Two methods
 
-##### CSS
+##### **CSS**
 
 Choose the [theme](https://highlightjs.org/static/demo/) for syntax highlighting and add corresponding styles of highlight.js
 
@@ -42,7 +34,7 @@ Choose the [theme](https://highlightjs.org/static/demo/) for syntax highlighting
 
 The styles will most likely be in `node_modules/highlight.js/styles` folder.
 
-##### Import into file
+##### **Import into file**
 
 Inside the file that highlight will be used (or a parent file of multiple children), import the stylesheet.
 
@@ -57,6 +49,10 @@ import "/path/to/styles/theme-name.css";
 - element: render code snippet inside specified element
 
 ### Examples:
+
+#### Code Sandbox Example
+
+[![Edit react-highlight-updated](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/laughing-swanson-euuss?fontsize=14)
 
 #### Syntax highlighting of single code snippet
 
