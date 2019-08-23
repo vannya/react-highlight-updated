@@ -1,5 +1,17 @@
-import React, { useEffect, useRef } from "react";
-import hljs from "highlight.js/lib/highlight";
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _highlight = _interopRequireDefault(require("highlight.js/lib/highlight"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
 var Highlight = function Highlight(_ref) {
   var children = _ref.children,
@@ -7,10 +19,10 @@ var Highlight = function Highlight(_ref) {
       element = _ref.element,
       innerHTML = _ref.innerHTML,
       languages = _ref.languages;
-  useEffect(function () {
+  (0, _react.useEffect)(function () {
     highlightCode();
   });
-  var elem = useRef();
+  var elem = (0, _react.useRef)();
 
   var highlightCode = function highlightCode() {
     var nodes = elem.current.querySelectorAll("pre code");
@@ -20,10 +32,10 @@ var Highlight = function Highlight(_ref) {
     }
 
     languages.forEach(function (lang) {
-      hljs.registerLanguage(lang, require("highlight.js/lib/languages/" + lang));
+      _highlight.default.registerLanguage(lang, require("highlight.js/lib/languages/" + lang));
     });
     nodes.forEach(function (node) {
-      return hljs.highlightBlock(node);
+      return _highlight.default.highlightBlock(node);
     });
   };
 
@@ -38,19 +50,19 @@ var Highlight = function Highlight(_ref) {
     };
 
     if (element) {
-      return React.createElement(element, props);
+      return _react.default.createElement(element, props);
     }
 
-    return React.createElement("div", props);
+    return _react.default.createElement("div", props);
   }
 
   if (element) {
-    return React.createElement(element, props, children);
+    return _react.default.createElement(element, props, children);
   }
 
-  return React.createElement("pre", {
+  return _react.default.createElement("pre", {
     ref: elem
-  }, React.createElement("code", {
+  }, _react.default.createElement("code", {
     className: className
   }, children));
 };
@@ -60,4 +72,5 @@ Highlight.defaultProps = {
   className: undefined,
   languages: []
 };
-export default Highlight;
+var _default = Highlight;
+exports.default = _default;

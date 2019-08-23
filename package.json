@@ -1,6 +1,6 @@
 {
   "name": "react-highlight-updated",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": false,
   "peerDependencies": {
     "react": "^16.8.6",
@@ -103,7 +103,19 @@
   },
   "babel": {
     "presets": [
-      "react-app"
+      [
+        "@babel/preset-env",
+        {
+          "modules": "commonjs"
+        }
+      ],
+      [
+        "react-app",
+        {
+          "helpers": false,
+          "absoluteRuntime": false
+        }
+      ]
     ]
   },
   "dependencies": {
