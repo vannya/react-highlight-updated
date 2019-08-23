@@ -7,7 +7,7 @@ Note: This package now has a peer dependency on React version 16.8.6 due to useE
 
 ### Latest version
 
-`0.1.3`
+`0.1.4`
 
 ### Installation
 
