@@ -1,4 +1,4 @@
-# react-highlight-updated [![npm version](https://badge.fury.io/js/react-highlight-updated.svg)](https://badge.fury.io/js/react-highlight-updated) [![Build Status](https://travis-ci.org/vannya/react-highlight-updated.svg?branch=master)](https://travis-ci.org/vannya/react-highlight-updated)
+# react-highlight-updated [![npm version](https://badge.fury.io/js/react-highlight-updated.svg)](https://badge.fury.io/js/react-highlight-updated) [![Build Status](https://travis-ci.com/vannya/react-highlight-updated.svg?branch=master)](https://travis-ci.com/vannya/react-highlight-updated)
 
 Updated react-highlight package for syntax highlighting in React using highlight.js.
 
