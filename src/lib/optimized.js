@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import hljs from "highlight.js/lib/highlight";
+import hljs from "highlight.js";
 
 const Highlight = ({ children, className, element, innerHTML, languages }) => {
   useEffect(() => {

@@ -30,50 +30,50 @@ describe("highlight", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  test("text passed as child should display", () => {
+  it("text passed as child should display", () => {
     const component = testComponent().find("Highlight");
     expect(component.text()).toBe("Mock Text");
     expect(component.props().children).toBe("Mock Text");
   });
 
-  test("pre and code tags should be in markup", () => {
+  it("pre and code tags should be in markup", () => {
     const preTag = testComponent().find("pre");
     expect(preTag.length).toBe(1);
     const codeTag = testComponent().find("code");
     expect(codeTag.length).toBe(1);
   });
 
-  test("className should be the default when none is passed", () => {
+  it("className should be the default when none is passed", () => {
     const codeTag = testComponent().find("code");
     expect(codeTag.props().className).toBe(undefined);
   });
 
-  test("className should be assigned when passed", () => {
+  it("className should be assigned when passed", () => {
     props.className = "java";
     props.languages = [];
     const codeTag = testComponent().find("code");
     expect(codeTag.props().className).toBe("java");
   });
 
-  test("className should be assigned when passed", () => {
+  it("className should be assigned when passed", () => {
     props.className = "java";
     const codeTag = testComponent().find("code");
     expect(codeTag.props().className).toBe("java");
   });
 
-  test("element prop renders children in that element - span test", () => {
+  it("element prop renders children in that element - span test", () => {
     props.element = "span";
     const component = testComponent().find("span");
     expect(component.length).toBe(1);
   });
 
-  test("element prop renders children in that element - button test", () => {
+  it("element prop renders children in that element - button test", () => {
     props.element = "button";
     const buttonComp = testComponent().find("button");
     expect(buttonComp.length).toBe(1);
   });
 
-  test("should render innerHTML in a default div", () => {
+  it("should render innerHTML in a default div", () => {
     props.innerHTML = true;
     const component = testComponent().find("div");
     expect(component.text()).toBe("Mock Text");
@@ -82,7 +82,7 @@ describe("highlight", () => {
     });
   });
 
-  test("should render innerHTML in a span", () => {
+  it("should render innerHTML in a span", () => {
     props.element = "span";
     props.innerHTML = true;
     const component = testComponent().find("span");
