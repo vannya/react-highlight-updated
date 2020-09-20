@@ -7,7 +7,7 @@ Note: This package now has a peer dependency on React version 16.8.6 due to useE
 
 ### Latest version
 
-`0.1.6`
+`0.1.8`
 
 ### Installation
 
@@ -73,7 +73,5 @@ This is especially useful if html with multiple code snippets is generated from 
 **Warning:** If innerHTML is set to true, make sure the html generated with code snippets is from trusted source.
 
 ```html
-<Highlight innerHTML="{true}">
-  {"html with multiple code snippets"}
-</Highlight>
+<Highlight innerHTML="{true}"> {"html with multiple code snippets"} </Highlight>
 ```

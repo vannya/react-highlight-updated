@@ -1,6 +1,6 @@
 {
   "name": "react-highlight-updated",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "homepage": "https://github.com/vannya/react-highlight-updated/#readme",
   "main": "./index.js",
   "keywords": [
@@ -22,7 +22,5 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
-  "dependencies": {
-    "highlight.js": "^9.15.9"
-  }
+  "dependencies": {}
 }
